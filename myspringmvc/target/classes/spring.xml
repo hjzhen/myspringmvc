@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"   
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+            http://www.springframework.org/schema/beans/spring-beans-4.1.xsd  
+            http://www.springframework.org/schema/context  
+            http://www.springframework.org/schema/context/spring-context-4.1.xsd"> 
+    <!-- <project xmlns="http://maven.apache.org/POM/4.0.0"  命名空间，类似包名，因为xml的标签可自定义，需要命名空间来区分
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xml遵循的标签规范
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+	http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	用来定义xmlschema的地址，也就是xml书写时需要遵循的语法，两部分组成，前面部分就是命名空间的名字，后面是xsd（xmlschema）的地址
+	-->
+    <!--自动扫描含有@Service将其注入为bean -->  
+    <context:component-scan base-package="com.myspringmvc.service" />  
+            
+</beans>
